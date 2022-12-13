@@ -1233,50 +1233,7 @@ end)
 end)
 end)
 
-  RRRRSection:NewButton("Gun Mods", "Enables Gun mods for your weapons!", function()
-     
-        for i,v in pairs(game:GetService("ReplicatedStorage").Game.ItemConfig:GetChildren()) do
-local shake = require(v)
-shake.CamShakeMagnitude = 0
-end
-        for i,v in pairs(game:GetService("ReplicatedStorage").Game.ItemConfig:GetChildren()) do
-local auto = require(v)
-auto.FireAuto = true
-end
-        for i,v in pairs(game:GetService("ReplicatedStorage").Game.ItemConfig:GetChildren()) do
-local bullet = require(v)
-bullet.BulletSpeed = 100000
-end
-        for i,v in pairs(game:GetService("ReplicatedStorage").Game.ItemConfig:GetChildren()) do
-local freq = require(v)
-freq.FireFreq = math.huge
-end
-        for i,v in pairs(game:GetService("ReplicatedStorage").Game.ItemConfig:GetChildren()) do
-local mag = require(v)
-mag.MagSize = 10000
-end 
-  end)
-  
-      RRRRSection:NewButton("Disable gun mods", "Disables gun mods", function()
-    
-        for i,v in pairs(game:GetService("ReplicatedStorage").Game.ItemConfig:GetChildren()) do
-local shake = require(v)
-shake.CamShakeMagnitude = 30
-end
-        for i,v in pairs(game:GetService("ReplicatedStorage").Game.ItemConfig:GetChildren()) do
-local auto = require(v)
-auto.FireAuto = false
-end
-        for i,v in pairs(game:GetService("ReplicatedStorage").Game.ItemConfig:GetChildren()) do
-local bullet = require(v)
-bullet.BulletSpeed = 5
-end
-        for i,v in pairs(game:GetService("ReplicatedStorage").Game.ItemConfig:GetChildren()) do
-local mag = require(v)
-mag.MagSize = 30
-end  
-end)
-
+ 
 end
 
 
