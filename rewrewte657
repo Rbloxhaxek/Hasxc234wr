@@ -71,10 +71,13 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 
-_G.Key = "4FGHEWUEW" -- You Put Your Key Here
+_G.Key = "PHMDKLMFK" -- You Put Your Key Here
 _G.KeyInput = "string"
 
 function MakeScriptHub()
+
+
+
 
 
 
@@ -783,7 +786,7 @@ local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.C
 tween:Play()
 tween.Completed:Wait()
     game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(650.177978515625, -74.67220306396484, -229.0464324951172))
-    wait(10)
+    wait(6)
     
       local CFrameEnd = CFrame.new(796.6005249023438, -89.17391967773438, -208.5873260498047) -- Place your coords in here
 local Time = 3 -- Time in seconds
@@ -1049,41 +1052,41 @@ end)
 
  RobByClickSection:NewButton("Rob bank: Basement , click the :", "How to use: exec vynixius then turn on rob assistance ", function()
 local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/main/Scripts/Jailbreak/Teleporation.lua"))();
-   teleport(CFrame.new(8.49311351776123, 18.563661575317383, 862.8695068359375));
+   teleport(CFrame.new(9.872544288635254, 18.563661575317383, 862.9417724609375));
           game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(14.029051780700684, 18.56012535095215, 862.2860717773438))
 wait(1)
    local CFrameEnd = CFrame.new(30.573131561279297, 18.667993545532227, 864.0424194335938) -- Place your coords in here
-local Time = 3 -- Time in seconds
+local Time = 1 -- Time in seconds
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
 tween.Completed:Wait()
 
   local CFrameEnd = CFrame.new(43.109798431396484, 21.524478912353516, 925.1741333007812) -- Place your coords in here
-local Time = 3 -- Time in seconds
+local Time = 1 -- Time in seconds
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
 tween.Completed:Wait()
   local CFrameEnd = CFrame.new(87.46041107177734, 9.982972145080566, 917.5267333984375) -- Place your coords in here
-local Time = 3 -- Time in seconds
+local Time = 1 -- Time in seconds
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
 tween.Completed:Wait()
   local CFrameEnd = CFrame.new(93.9975357055664, -0.32601669430732727, 965.29248046875) -- Place your coords in here
-local Time = 3 -- Time in seconds
+local Time = 1 -- Time in seconds
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
 tween.Completed:Wait()
   local CFrameEnd = CFrame.new(38.619842529296875, -5.459557056427002, 951.8216552734375) -- Place your coords in here
-local Time = 3 -- Time in seconds
+local Time = 1 -- Time in seconds
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
 tween.Completed:Wait()
   local CFrameEnd = CFrame.new(4.935787677764893, -4.143134593963623, 961.0768432617188) -- Place your coords in here
-local Time = 3 -- Time in seconds 
+local Time = 1 -- Time in seconds 
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
 tween.Completed:Wait()
-wait(60)
+wait(50)
    teleport(CFrame.new(8.49311351776123, 18.563661575317383, 862.8695068359375));
 
 end)
@@ -1680,8 +1683,6 @@ end)
   end
 end)
 end)
-
- 
  
 end
 
