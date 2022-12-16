@@ -108,6 +108,9 @@ function MakeScriptHub()
 
 
 
+
+
+
 local UIS=game:GetService'UserInputService'
 getgenv().KeyBind="Minus"--Has to be letters
 
@@ -417,6 +420,8 @@ local Time = 1 -- Time in seconds
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
 tween.Completed:Wait()
+local N=game:GetService("VirtualInputManager")
+N:SendKeyEvent(true,"X",false,game)
 local CFrameEnd = CFrame.new(61.18678665161133, 21.039396286010742, 2295.204833984375) -- Place your coords in here
 local Time = 1 -- Time in seconds
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
@@ -548,6 +553,8 @@ local Time = 1 -- Time in seconds
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
 tween.Completed:Wait()
+local N=game:GetService("VirtualInputManager")
+N:SendKeyEvent(true,"X",false,game)
 local CFrameEnd = CFrame.new(61.18678665161133, 21.039396286010742, 2295.204833984375) -- Place your coords in here
 local Time = 1 -- Time in seconds
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
@@ -1982,6 +1989,27 @@ end)
   end
 end)
 end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
