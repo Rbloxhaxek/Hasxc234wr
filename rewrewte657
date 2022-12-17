@@ -112,6 +112,7 @@ function MakeScriptHub()
 
 
 
+
 local UIS=game:GetService'UserInputService'
 getgenv().KeyBind="Minus"--Has to be letters
 
@@ -205,7 +206,7 @@ end
 end)
 
      OtherSection:NewButton("Pathfind goto volcano base", "Women", function()
-  local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/main/Scripts/Jailbreak/Teleporation.lua"))();
+ local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Rbloxhaxek/ret/main/TELepwoi4ert"))();
  teleport(CFrame.new(2282.201904296875, 18.81041717529297, -2054.352783203125));
    local CFrameEnd = CFrame.new(2213.162109375, 19.38250732421875, -2466.657958984375) -- Place your coords in here
 local Time = 3.4-- Time in seconds
@@ -260,7 +261,7 @@ end)
           
 end)
     RobByClickSection:NewButton("Rob gas station click the :", "How to use: Click the button and let it rob  ", function()
-local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/main/Scripts/Jailbreak/Teleporation.lua"))();
+ local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Rbloxhaxek/ret/main/TELepwoi4ert"))();
    teleport(CFrame.new(-1531.4261474609375, 18.39613914489746, 695.7993774414062));
 
    local CFrameEnd = CFrame.new(-1595.9986572265625, 18.49612808227539, 709.5403442382812) -- Place your coords in here
@@ -281,7 +282,7 @@ keyrelease(0x45)
 end)
 
    RobByClickSection:NewButton("Rob donut store click the :", "How to use: click the button and wait ", function()
-local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/main/Scripts/Jailbreak/Teleporation.lua"))();
+ local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Rbloxhaxek/ret/main/TELepwoi4ert"))();
    teleport(CFrame.new(90.65267181396484, 19.215852737426758, -1517.4146728515625));
        game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(97.68617248535156, 19.515846252441406, -1526.8753662109375))
 
@@ -309,7 +310,7 @@ end)
    
    wait(1)
    
-   local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/main/Scripts/Jailbreak/Teleporation.lua"))();
+  local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Rbloxhaxek/ret/main/TELepwoi4ert"))();
    teleport(CFrame.new(136.09686279296875, 18.593647003173828, 1346.2608642578125));
    wait(1)
     game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(101.19652557373047, 18.6054630279541, 1310.026123046875))
@@ -356,7 +357,7 @@ end)
       game.Workspace.PowerPlant.Piston:Destroy()
 game.Workspace.PowerPlant.Piston:Destroy()
 game.Workspace.PowerPlant.Core.PowerWire:Destroy()
-        local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/main/Scripts/Jailbreak/Teleporation.lua"))();
+       local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Rbloxhaxek/ret/main/TELepwoi4ert"))();
    teleport(CFrame.new(82.90626525878906, 19.59088134765625, 2325.771728515625));
    wait(0.05)
                     game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(87.87232208251953, 21.589290618896484, 2323.332763671875))
@@ -436,7 +437,7 @@ local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.C
 tween:Play()
 tween.Completed:Wait()
  teleport(CFrame.new(2282.201904296875, 18.81041717529297, -2054.352783203125));
-getgenv().Speed = 1500
+getgenv().Speed = 1200
 --postion
 local Time =
     (Vector3.new(0, 0, 3) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude / getgenv().Speed
@@ -449,8 +450,8 @@ local Tween =
 )
 Tween:Play()
 Tween.Completed:Wait()
-wait(2)
-getgenv().Speed = 5000
+wait(1.5)
+getgenv().Speed = 4500
 --postion
 local Time =
     (Vector3.new(0, 0, 3) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude / getgenv().Speed
@@ -489,6 +490,18 @@ local Tween =
 )
 Tween:Play()
 Tween.Completed:Wait()
+   
+
+
+
+   
+
+
+
+   
+   
+
+
    
 
 
@@ -496,7 +509,7 @@ Tween.Completed:Wait()
 end)
  RobByClickSection:NewButton("Rob power (Same) (Buggy) click the :", "Incase the other one doesnt work if u clicked it. :(", function()
 
-    local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/main/Scripts/Jailbreak/Teleporation.lua"))();
+   local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Rbloxhaxek/ret/main/TELepwoi4ert"))();
    teleport(CFrame.new(82.90626525878906, 19.59088134765625, 2325.771728515625));
    wait(0.05)
                     game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(87.87232208251953, 21.589290618896484, 2323.332763671875))
@@ -576,7 +589,7 @@ local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.C
 tween:Play()
 tween.Completed:Wait()
  teleport(CFrame.new(2282.201904296875, 18.81041717529297, -2054.352783203125));
-getgenv().Speed = 1400
+getgenv().Speed = 1200
 --postion
 local Time =
     (Vector3.new(0, 0, 3) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude / getgenv().Speed
@@ -589,8 +602,8 @@ local Tween =
 )
 Tween:Play()
 Tween.Completed:Wait()
-wait(2)
-getgenv().Speed = 5000
+wait(1.5)
+getgenv().Speed = 4500
 --postion
 local Time =
     (Vector3.new(0, 0, 3) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude / getgenv().Speed
@@ -630,6 +643,9 @@ local Tween =
 Tween:Play()
 Tween.Completed:Wait()
    
+
+
+
    
 
    
@@ -647,7 +663,7 @@ notifications:notify{
             
             
      
-  local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/main/Scripts/Jailbreak/Teleporation.lua"))();
+ local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Rbloxhaxek/ret/main/TELepwoi4ert"))();
    teleport(CFrame.new(-269.84100341796875, 19.81594467163086, -4645.302734375));
      
    
@@ -956,7 +972,7 @@ print('ERROR 332, COULDNT RUN SCRIPT: ROB CASINO')
 end)
 
     RobByClickSection:NewButton("Rob tomb click the :", "How to use: exec vynixius then turn on rob assistance ", function()
-local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/main/Scripts/Jailbreak/Teleporation.lua"))();
+ local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Rbloxhaxek/ret/main/TELepwoi4ert"))();
    teleport(CFrame.new(589.5206298828125, 20.99802017211914, -478.5639953613281));
     local CFrameEnd = CFrame.new(546.301513671875, 30.12948226928711, -494.18951416015625) -- Place your coords in here
 local Time = 1 -- Time in seconds
@@ -1104,7 +1120,7 @@ N:SendKeyEvent(true,"E",false,game)
 end)
 
     RobByClickSection:NewButton("Rob bank: The mint, click the :", "How to use: exec vynixius then turn on rob assistance ", function()
-local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/main/Scripts/Jailbreak/Teleporation.lua"))();
+ local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Rbloxhaxek/ret/main/TELepwoi4ert"))();
    teleport(CFrame.new(5.886493682861328, 18.563661575317383, 864.6653442382812));
           game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(14.029051780700684, 18.56012535095215, 862.2860717773438))
 wait(1)
@@ -1182,7 +1198,7 @@ tween:Play()
 tween.Completed:Wait()
     end)
   RobByClickSection:NewButton("Rob bank: Deductions, click the :", "How to use: exec vynixius then turn on rob assistance ", function()
-local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/main/Scripts/Jailbreak/Teleporation.lua"))();
+ local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Rbloxhaxek/ret/main/TELepwoi4ert"))();
    teleport(CFrame.new(8.49311351776123, 18.563661575317383, 862.8695068359375));
           game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(14.029051780700684, 18.56012535095215, 862.2860717773438))
 wait(1)
@@ -1272,7 +1288,7 @@ tween.Completed:Wait()
 end)
 
  RobByClickSection:NewButton("Rob bank: Basement , click the :", "How to use: exec vynixius then turn on rob assistance ", function()
-local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/main/Scripts/Jailbreak/Teleporation.lua"))();
+ local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Rbloxhaxek/ret/main/TELepwoi4ert"))();
    teleport(CFrame.new(9.872544288635254, 18.563661575317383, 862.9417724609375));
           game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(14.029051780700684, 18.56012535095215, 862.2860717773438))
 wait(1)
@@ -1313,7 +1329,7 @@ wait(40)
 end)
 
  RobByClickSection:NewButton("Rob bank: Blue, click the :", "How to use: exec vynixius then turn on rob assistance ", function()
-       local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/main/Scripts/Jailbreak/Teleporation.lua"))();
+      local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Rbloxhaxek/ret/main/TELepwoi4ert"))();
       teleport(CFrame.new(9.011098861694336, 22.424373626708984, 862.5709838867188));
              game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(14.029051780700684, 18.56012535095215, 862.2860717773438))
 wait(1)
@@ -1370,7 +1386,7 @@ tween:Play()
 tween.Completed:Wait()
  end)
  RobByClickSection:NewButton("Rob bank: Financing: Underwater , click the :", "How to use: exec vynixius then turn on rob assistance ", function()
-       local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/main/Scripts/Jailbreak/Teleporation.lua"))();
+      local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Rbloxhaxek/ret/main/TELepwoi4ert"))();
       teleport(CFrame.new(12.28734302520752, 18.563661575317383, 862.1578369140625));
              game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(14.029051780700684, 18.56012535095215, 862.2860717773438))
 wait(1)
@@ -1455,7 +1471,7 @@ tween.Completed:Wait()
 
  end)
    RobByClickSection:NewButton("Rob bank: Upper Management , click the :", "How to use: exec vynixius then turn on rob assistance ", function()
-       local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/main/Scripts/Jailbreak/Teleporation.lua"))();
+      local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Rbloxhaxek/ret/main/TELepwoi4ert"))();
         teleport(CFrame.new(13.679293632507324, 16.24138069152832, 863.0082397460938));
                game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(14.029051780700684, 18.56012535095215, 862.2860717773438))
 wait(1)
@@ -1573,7 +1589,7 @@ tween:Play()
 tween.Completed:Wait()
 end)
 RobByClickSection:NewButton("Rob bank: Corridor , click the :", "How to use: exec vynixius then turn on rob assistance ", function() --mint deductions basement blue financing
-       local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/main/Scripts/Jailbreak/Teleporation.lua"))();
+      local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Rbloxhaxek/ret/main/TELepwoi4ert"))();
         teleport(CFrame.new(4.034597396850586, 16.066503524780273, 864.7748413085938));
             game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(14.029051780700684, 18.56012535095215, 862.2860717773438))
 wait(1)
@@ -1656,7 +1672,7 @@ tween.Completed:Wait()
 
 end)
     RobByClickSection:NewButton("Rob bank: Presidential Vault , click the :", "How to use: exec vynixius then turn on rob assistance ", function() --mint deductions basement blue financing
-               local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/main/Scripts/Jailbreak/Teleporation.lua"))();
+              local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Rbloxhaxek/ret/main/TELepwoi4ert"))();
         teleport(CFrame.new(12.103007316589355, 18.563661575317383, 863.9884033203125));
             game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(14.029051780700684, 18.56012535095215, 862.2860717773438))
 wait(1)
@@ -1745,7 +1761,7 @@ tween:Play()
 tween.Completed:Wait()
 end)
  RobByClickSection:NewButton("Rob bank: Classic: Remastered, click the :", "How to use: exec vynixius then turn on rob assistance ", function()
-        local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/main/Scripts/Jailbreak/Teleporation.lua"))();
+       local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Rbloxhaxek/ret/main/TELepwoi4ert"))();
         teleport(CFrame.new(7.697389125823975, 16.266735076904297, 862.603515625));
                     game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(14.029051780700684, 18.56012535095215, 862.2860717773438))
                     
@@ -1813,7 +1829,7 @@ tween:Play()
 tween.Completed:Wait()
 end)
  RobByClickSection:NewButton("Rob Museum click the :", "How to use: exec vynixius then turn on rob assistance ", function() --mint deductions basement blue financing
-               local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/main/Scripts/Jailbreak/Teleporation.lua"))();
+              local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Rbloxhaxek/ret/main/TELepwoi4ert"))();
                   teleport(CFrame.new(1071.4842529296875, 114.13302612304688, 1254.2923583984375));
                      -- made by jmp @v3rmillion.net
            local CFrameEnd = CFrame.new(1092.4111328125, 108.74674224853516, 1275.6962890625) -- Place your coords in here
@@ -1900,6 +1916,74 @@ local RRRR = Window:NewTab("Misc")
   end
 end)
 end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
 
 
 
