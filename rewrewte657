@@ -59,7 +59,7 @@
 
 
 
-game.Players.LocalPlayer:Kick("Script is updating, please wait for a update.")
+game.Players.LocalPlayer:Kick("Script is patched.")
 wait(30)
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "KeySystem", HidePremium = true, SaveConfig = true, ConfigFolder = "OrionTest"})
