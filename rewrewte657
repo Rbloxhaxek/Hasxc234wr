@@ -14908,6 +14908,7 @@ function MakeScriptHub()
 
 
 
+
 local UIS=game:GetService'UserInputService'
 getgenv().KeyBind="Minus"--Has to be letters
 
@@ -15108,53 +15109,684 @@ keyrelease(0x45)
 end)
 
    RobByClickSection:NewButton("Rob j store click the :", "How to use: Click it and let it rob its a little buggy  ", function()
-       
+getsenv(game:GetService("Players").LocalPlayer.PlayerScripts.LocalScript).tick = function() return 0/0 end
+local js = workspace:FindFirstChild('Jewelrys'):GetChildren()[1]
+local modelnames = {'LaserFloor', 'Lasers'}
+local partnames = {'LaserEnd', 'LaserGround'}
+
+local function islaser(obj)
+    if obj.ClassName == 'Part' and obj.Material == Enum.Material.Neon and obj:FindFirstChildOfClass('TouchTransmitter') then
+        return true
+    end
+end
+
+local function clearlasers(obj)
+    if obj.ClassName == 'Part' and obj.Name == 'BarbedWire' or islaser(obj) then
+        obj:Destroy()
+    elseif obj.ClassName == 'Model' then 
+        if table.find(modelnames, obj.Name) then
+            obj:Destroy()
+        elseif obj.Name == 'Camera' then
+            local innermodel = obj:FindFirstChild('InnerModel')
+            if innermodel then
+                for _,moreobj in pairs (innermodel:GetChildren()) do
+                    if moreobj.ClassName == 'Part' or moreobj.ClassName == 'MeshPart' then
+                        moreobj.CFrame = CFrame.new(0, -999, 0)
+                        moreobj:GetPropertyChangedSignal('CFrame'):Connect(function()
+                            if moreobj.CFrame ~= CFrame.new(0, -999, 0) then
+                                moreobj.CFrame = CFrame.new(0, -999, 0)
+                            end
+                        end)
+                    end
+                end
+            end
+        end
+    end
+end
+
+for _,v in pairs (js:GetDescendants()) do
+    clearlasers(v)
+end
+   
+ local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/main/Scripts/Jailbreak/Teleporation.lua"))();
+   teleport(CFrame.new(140.1625518798828, 18.563629150390625, 1351.3326416015625));
+   getgenv().Speed = 1000
+--postion
+local Time =
+    (Vector3.new(0, 0, 3) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude / getgenv().Speed
+local Info = TweenInfo.new(Time, Enum.EasingStyle.Linear)
+local Tween =
+    game:GetService("TweenService"):Create(
+    game.Players.LocalPlayer.Character.HumanoidRootPart,
+    Info,
+    {CFrame = CFrame.new(Vector3.new(105.81100463867188, 19.01136016845703, 1283.2852783203125))}
+)
+Tween:Play()
+Tween.Completed:Wait()
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(2)
+ getgenv().Speed = 10000
+--postion
+local Time =
+    (Vector3.new(0, 0, 3) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude / getgenv().Speed
+local Info = TweenInfo.new(Time, Enum.EasingStyle.Linear)
+local Tween =
+    game:GetService("TweenService"):Create(
+    game.Players.LocalPlayer.Character.HumanoidRootPart,
+    Info,
+    {CFrame = CFrame.new(Vector3.new(114.73970031738281, 19.011367797851562, 1281.7247314453125))}
+)
+Tween:Play()
+Tween.Completed:Wait()
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(2)
+    getgenv().Speed = 10000
+--postion
+local Time =
+    (Vector3.new(0, 0, 3) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude / getgenv().Speed
+local Info = TweenInfo.new(Time, Enum.EasingStyle.Linear)
+local Tween =
+    game:GetService("TweenService"):Create(
+    game.Players.LocalPlayer.Character.HumanoidRootPart,
+    Info,
+    {CFrame = CFrame.new(Vector3.new(125.64437103271484, 18.605464935302734, 1279.930908203125))}
+)
+Tween:Play()
+Tween.Completed:Wait()
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(2)
+
+ getgenv().Speed = 10000
+--postion
+local Time =
+    (Vector3.new(0, 0, 3) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude / getgenv().Speed
+local Info = TweenInfo.new(Time, Enum.EasingStyle.Linear)
+local Tween =
+    game:GetService("TweenService"):Create(
+    game.Players.LocalPlayer.Character.HumanoidRootPart,
+    Info,
+    {CFrame = CFrame.new(Vector3.new(134.34197998046875, 18.6054630279541, 1278.409912109375))}
+)
+Tween:Play()
+Tween.Completed:Wait()
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(2)
+ getgenv().Speed = 10000
+--postion
+local Time =
+    (Vector3.new(0, 0, 3) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude / getgenv().Speed
+local Info = TweenInfo.new(Time, Enum.EasingStyle.Linear)
+local Tween =
+    game:GetService("TweenService"):Create(
+    game.Players.LocalPlayer.Character.HumanoidRootPart,
+    Info,
+    {CFrame = CFrame.new(Vector3.new(150.5652618408203, 18.6054630279541, 1292.410888671875))}
+)
+Tween:Play()
+Tween.Completed:Wait()
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+           keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(0.05)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+keypress(0x46) -- spacebar
+keyrelease(0x46)
+wait(10)
+   teleport(CFrame.new(-321.1728515625, 18.263689041137695, 1603.5211181640625));
 
    
-   wait(1)
-   
-   local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/main/Scripts/Jailbreak/Teleporation.lua"))();
-   teleport(CFrame.new(136.09686279296875, 18.593647003173828, 1346.2608642578125));
-   wait(1)
-    game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(101.19652557373047, 18.6054630279541, 1310.026123046875))
-    wait(3)
-local CFrameEnd = CFrame.new(105.04393768310547, 19.227258682250977, 1283.0390625) -- Place your coords in here
-local Time = 3 -- Time in seconds
-local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
-tween:Play()
-tween.Completed:Wait()
-       wait(2)
-              game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(115.25011444091797, 18.6054630279541, 1281.699462890625))
-              wait(2)
-                            game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(125.63843536376953, 19.011377334594727, 1279.5596923828125))
-                            wait(2)
-   
-                               game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(135.1752471923828, 18.821380615234375, 1278.142822265625))
-                               wait(2)
-                                                          game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(150.33619689941406, 18.6054630279541, 1291.1356201171875))
-                                                          wait(2)
-                                                                                                                    game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(152.70635986328125, 18.6054630279541, 1310.2086181640625))
-                                                                                                                    wait(2)
-    
-wait(1)
-                                                                                                                
-
-                                                                                                                    
-   
-   
-   teleport(CFrame.new(-307.2090148925781, 23.185516357421875, 1602.1387939453125));
-                 game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(-327.1950988769531, 18.263689041137695, 1602.309814453125))
-                 wait(2)
-  
-
-   
-   --105.61283111572266, 18.6054630279541, 1283.5994873046875
---112.52581787109375, 18.6054630279541, 1282.875
---125.52669525146484, 19.417293548583984, 1279.3668212890625
---134.1683349609375, 18.6054630279541, 1278.3785400390625
---150.74749755859375, 18.6054630279541, 1293.93603515625
---153.10975646972656, 18.6054630279541, 1309.673095703125
 end)
+
 
   RobByClickSection:NewButton("Rob power (Buggy) click the :", "How to use: Click it most likely wont work ", function()
       local notifications = loadstring(game:HttpGet(("https://raw.githubusercontent.com/AbstractPoo/Main/main/Notifications.lua"),true))()
@@ -16521,7 +17153,7 @@ print('ERROR 332, COULDNT RUN SCRIPT: ROB CASINO')
  
 end)
 
-    RobByClickSection:NewButton("Rob tomb click the :", "How to use: exec vynixius then turn on rob assistance ", function()
+    RobByClickSection:NewButton("Rob tomb click the :", "Click it ", function()
  local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/main/Scripts/Jailbreak/Teleporation.lua"))(); --casino 
  teleport(CFrame.new(612.1494140625, 20.99802017211914, -466.9921875));
  getgenv().Speed = 1000
@@ -16785,7 +17417,22 @@ local N=game:GetService("VirtualInputManager")
 N:SendKeyEvent(true,"E",false,game)
 end)
 
-    RobByClickSection:NewButton("Rob bank: The mint, click the :", "How to use: exec vynixius then turn on rob assistance ", function()
+    RobByClickSection:NewButton("Rob bank: The mint, click the :", "Click it ", function()
+        --created by Nepsy#4348.
+--this removes bank lasers only
+local bk = workspace:FindFirstChild('Banks'):GetChildren()[1]
+
+local function clearbanklasers(obj)
+    if obj.ClassName == 'Model' and obj.Name == 'Lasers' then 
+        obj:Destroy()
+    end
+end
+
+for _,v in pairs (bk:GetDescendants()) do
+    clearbanklasers(v)
+end
+
+bk.DescendantAdded:Connect(clearbanklasers)
 local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/main/Scripts/Jailbreak/Teleporation.lua"))();
    teleport(CFrame.new(10.164444923400879, 18.561552047729492, 862.9168701171875));
           game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(14.029051780700684, 18.56012535095215, 862.2860717773438))
@@ -16863,39 +17510,56 @@ local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.C
 tween:Play()
 tween.Completed:Wait()
     end)
-  RobByClickSection:NewButton("Rob bank: Deductions, click the :", "How to use: exec vynixius then turn on rob assistance ", function()
+  RobByClickSection:NewButton("Rob bank: Deductions, click the :", "Click it ", function()
+      --created by Nepsy#4348.
+--this removes bank lasers only
+local bk = workspace:FindFirstChild('Banks'):GetChildren()[1]
+
+local function clearbanklasers(obj)
+    if obj.ClassName == 'Model' and obj.Name == 'Lasers' then 
+        obj:Destroy()
+    end
+end
+
+for _,v in pairs (bk:GetDescendants()) do
+    clearbanklasers(v)
+end
+
+bk.DescendantAdded:Connect(clearbanklasers)
 local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/main/Scripts/Jailbreak/Teleporation.lua"))();
    teleport(CFrame.new(10.164444923400879, 18.561552047729492, 862.9168701171875));
           game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(14.029051780700684, 18.56012535095215, 862.2860717773438))
 wait(1)
    local CFrameEnd = CFrame.new(36.90531539916992, 19.630298614501953, 857.475830078125) -- Place your coords in here
-local Time = 3 -- Time in seconds
+local Time = 1 -- Time in seconds
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
 tween.Completed:Wait()
 
   local CFrameEnd = CFrame.new(42.17693328857422, 19.536893844604492, 927.0730590820312) -- Place your coords in here
-local Time = 3 -- Time in seconds
+local Time = 1 -- Time in seconds
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
 tween.Completed:Wait()
  local CFrameEnd = CFrame.new(54.10152816772461, 18.640724182128906, 922.9966430664062) -- Place your coords in here
-local Time = 3 -- Time in seconds
+local Time = 1 -- Time in seconds
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
 tween.Completed:Wait()
+    game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(50.27817153930664, -1.186779499053955, 962.7615966796875))
+    wait(11)
  local CFrameEnd = CFrame.new(101.34671783447266, 1.4904249906539917, 915.084228515625) -- Place your coords in here
-local Time = 3 -- Time in seconds
+local Time = 1 -- Time in seconds
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
 tween.Completed:Wait()
  local CFrameEnd = CFrame.new(110.90227508544922, 1.4904253482818604, 971.9701538085938) -- Place your coords in here
-local Time = 3 -- Time in seconds
+local Time = 1 -- Time in seconds
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
 tween.Completed:Wait()
  local CFrameEnd = CFrame.new(52.81479263305664, 1.2905957698822021, 961.9077758789062) -- Place your coords in here
-local Time = 3 -- Time in seconds
+local Time = 1 -- Time in seconds
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
 tween.Completed:Wait()
@@ -16906,54 +17570,69 @@ tween:Play()
 tween.Completed:Wait()
 wait(50)
  local CFrameEnd = CFrame.new(75.83756256103516, 1.2905961275100708, 957.41064453125) -- Place your coords in here
-local Time = 3 -- Time in seconds
+local Time = 1 -- Time in seconds
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
 tween.Completed:Wait()
  local CFrameEnd = CFrame.new(79.73161315917969, 1.2905938625335693, 977.7203369140625) -- Place your coords in here
-local Time = 3 -- Time in seconds
+local Time = 1 -- Time in seconds
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
 tween.Completed:Wait()
  local CFrameEnd = CFrame.new(79.73161315917969, 1.2905938625335693, 977.7203369140625) -- Place your coords in here
-local Time = 3 -- Time in seconds
+local Time = 1 -- Time in seconds
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
 tween.Completed:Wait()
  local CFrameEnd = CFrame.new(113.97603607177734, 1.4904251098632812, 972.856201171875) -- Place your coords in here
-local Time = 3 -- Time in seconds
+local Time = 1 -- Time in seconds
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
 tween.Completed:Wait()
  local CFrameEnd = CFrame.new(104.3342056274414, 1.4904249906539917, 914.8236694335938) -- Place your coords in here
-local Time = 3 -- Time in seconds
+local Time = 1 -- Time in seconds
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
 tween.Completed:Wait()
  local CFrameEnd = CFrame.new(53.42510223388672, 23.485557556152344, 921.8311767578125) -- Place your coords in here
-local Time = 3 -- Time in seconds
+local Time = 1 -- Time in seconds
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
 tween.Completed:Wait()
  local CFrameEnd = CFrame.new(39.134483337402344, 18.635839462280273, 923.8292236328125) -- Place your coords in here
-local Time = 3 -- Time in seconds
+local Time = 1 -- Time in seconds
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
 tween.Completed:Wait()
 local CFrameEnd = CFrame.new(25.50867462158203, 18.76412010192871, 859.4898681640625) -- Place your coords in here
-local Time = 3 -- Time in seconds
+local Time = 1 -- Time in seconds
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
 tween.Completed:Wait()
 local CFrameEnd = CFrame.new(-6.446248531341553, 18.263662338256836, 867.0518798828125) -- Place your coords in here
-local Time = 3 -- Time in seconds
+local Time = 1 -- Time in seconds
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
 tween.Completed:Wait()
 
 end)
 
- RobByClickSection:NewButton("Rob bank: Basement , click the :", "How to use: exec vynixius then turn on rob assistance ", function()
+ RobByClickSection:NewButton("Rob bank: Basement , click the :", "Click it ", function()
+     --created by Nepsy#4348.
+--this removes bank lasers only
+local bk = workspace:FindFirstChild('Banks'):GetChildren()[1]
+
+local function clearbanklasers(obj)
+    if obj.ClassName == 'Model' and obj.Name == 'Lasers' then 
+        obj:Destroy()
+    end
+end
+
+for _,v in pairs (bk:GetDescendants()) do
+    clearbanklasers(v)
+end
+
+bk.DescendantAdded:Connect(clearbanklasers)
 local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/main/Scripts/Jailbreak/Teleporation.lua"))();
    teleport(CFrame.new(10.164444923400879, 18.561552047729492, 862.9168701171875));
           game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(14.029051780700684, 18.56012535095215, 862.2860717773438))
@@ -16974,6 +17653,10 @@ local Time = 1 -- Time in seconds
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
 tween.Completed:Wait()
+wait(1)
+          game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(39.49638366699219, -7.867279052734375, 952.846923828125))
+          wait(11)
+
   local CFrameEnd = CFrame.new(93.9975357055664, -0.32601669430732727, 965.29248046875) -- Place your coords in here
 local Time = 1 -- Time in seconds
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
@@ -16994,7 +17677,22 @@ wait(40)
 
 end)
 
- RobByClickSection:NewButton("Rob bank: Blue, click the :", "How to use: exec vynixius then turn on rob assistance ", function()
+ RobByClickSection:NewButton("Rob bank: Blue, click the :", "Click it ", function()
+     --created by Nepsy#4348.
+--this removes bank lasers only
+local bk = workspace:FindFirstChild('Banks'):GetChildren()[1]
+
+local function clearbanklasers(obj)
+    if obj.ClassName == 'Model' and obj.Name == 'Lasers' then 
+        obj:Destroy()
+    end
+end
+
+for _,v in pairs (bk:GetDescendants()) do
+    clearbanklasers(v)
+end
+
+bk.DescendantAdded:Connect(clearbanklasers)
        local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/main/Scripts/Jailbreak/Teleporation.lua"))();
       teleport(CFrame.new(10.164444923400879, 18.561552047729492, 862.9168701171875));
              game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(14.029051780700684, 18.56012535095215, 862.2860717773438))
@@ -17051,7 +17749,22 @@ local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.C
 tween:Play()
 tween.Completed:Wait()
  end)
- RobByClickSection:NewButton("Rob bank: Financing: Underwater , click the :", "How to use: exec vynixius then turn on rob assistance ", function()
+ RobByClickSection:NewButton("Rob bank: Financing: Underwater , click the :", "Click it ", function()
+     --created by Nepsy#4348.
+--this removes bank lasers only
+local bk = workspace:FindFirstChild('Banks'):GetChildren()[1]
+
+local function clearbanklasers(obj)
+    if obj.ClassName == 'Model' and obj.Name == 'Lasers' then 
+        obj:Destroy()
+    end
+end
+
+for _,v in pairs (bk:GetDescendants()) do
+    clearbanklasers(v)
+end
+
+bk.DescendantAdded:Connect(clearbanklasers)
        local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/main/Scripts/Jailbreak/Teleporation.lua"))();
       teleport(CFrame.new(10.164444923400879, 18.561552047729492, 862.9168701171875));
              game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(14.029051780700684, 18.56012535095215, 862.2860717773438))
@@ -17136,7 +17849,22 @@ tween.Completed:Wait()
 
 
  end)
-   RobByClickSection:NewButton("Rob bank: Upper Management , click the :", "How to use: exec vynixius then turn on rob assistance ", function()
+   RobByClickSection:NewButton("Rob bank: Upper Management , click the :", "Click it ", function()
+       --created by Nepsy#4348.
+--this removes bank lasers only
+local bk = workspace:FindFirstChild('Banks'):GetChildren()[1]
+
+local function clearbanklasers(obj)
+    if obj.ClassName == 'Model' and obj.Name == 'Lasers' then 
+        obj:Destroy()
+    end
+end
+
+for _,v in pairs (bk:GetDescendants()) do
+    clearbanklasers(v)
+end
+
+bk.DescendantAdded:Connect(clearbanklasers)
        local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/main/Scripts/Jailbreak/Teleporation.lua"))();
         teleport(CFrame.new(10.164444923400879, 18.561552047729492, 862.9168701171875));
                game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(14.029051780700684, 18.56012535095215, 862.2860717773438))
@@ -17161,6 +17889,9 @@ local Time = 1 -- Time in seconds
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
 tween.Completed:Wait()
+wait(1)
+               game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(72.33121490478516, 57.84774398803711, 920.4420166015625))
+wait(10)
  local CFrameEnd = CFrame.new(29.05524444580078, 66.67849731445312, 839.214111328125) -- Place your coords in here
 local Time = 1 -- Time in seconds 
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
@@ -17254,7 +17985,22 @@ local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.C
 tween:Play()
 tween.Completed:Wait()
 end)
-RobByClickSection:NewButton("Rob bank: Corridor , click the :", "How to use: exec vynixius then turn on rob assistance ", function() --mint deductions basement blue financing
+RobByClickSection:NewButton("Rob bank: Corridor , click the :", "Click it ", function() --mint deductions basement blue financing
+    --created by Nepsy#4348.
+--this removes bank lasers only
+local bk = workspace:FindFirstChild('Banks'):GetChildren()[1]
+
+local function clearbanklasers(obj)
+    if obj.ClassName == 'Model' and obj.Name == 'Lasers' then 
+        obj:Destroy()
+    end
+end
+
+for _,v in pairs (bk:GetDescendants()) do
+    clearbanklasers(v)
+end
+
+bk.DescendantAdded:Connect(clearbanklasers)
        local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/main/Scripts/Jailbreak/Teleporation.lua"))();
         teleport(CFrame.new(10.164444923400879, 18.561552047729492, 862.9168701171875));
             game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(14.029051780700684, 18.56012535095215, 862.2860717773438))
@@ -17337,7 +18083,22 @@ tween:Play()
 tween.Completed:Wait()
 
 end)
-    RobByClickSection:NewButton("Rob bank: Presidential Vault , click the :", "How to use: exec vynixius then turn on rob assistance ", function() --mint deductions basement blue financing
+    RobByClickSection:NewButton("Rob bank: Presidential Vault , click the :", "Click it ", function() --mint deductions basement blue financing
+        --created by Nepsy#4348.
+--this removes bank lasers only
+local bk = workspace:FindFirstChild('Banks'):GetChildren()[1]
+
+local function clearbanklasers(obj)
+    if obj.ClassName == 'Model' and obj.Name == 'Lasers' then 
+        obj:Destroy()
+    end
+end
+
+for _,v in pairs (bk:GetDescendants()) do
+    clearbanklasers(v)
+end
+
+bk.DescendantAdded:Connect(clearbanklasers)
                local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/main/Scripts/Jailbreak/Teleporation.lua"))();
         teleport(CFrame.new(10.164444923400879, 18.561552047729492, 862.9168701171875));
             game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(14.029051780700684, 18.56012535095215, 862.2860717773438))
@@ -17357,6 +18118,9 @@ local Time = 1 -- Time in seconds
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
 tween.Completed:Wait()
+wait(1)
+            game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(85.02254486083984, -7.332573413848877, 994.7242431640625))
+wait(10)
  local CFrameEnd = CFrame.new(55.68826675415039, -7.983099460601807, 923.6727905273438) -- Place your coords in here
 local Time = 1 -- Time in seconds 
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
@@ -17426,7 +18190,22 @@ local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.C
 tween:Play()
 tween.Completed:Wait()
 end)
- RobByClickSection:NewButton("Rob bank: Classic: Remastered, click the :", "How to use: exec vynixius then turn on rob assistance ", function()
+ RobByClickSection:NewButton("Rob bank: Classic: Remastered, click the :", "Click it ", function()
+     --created by Nepsy#4348.
+--this removes bank lasers only
+local bk = workspace:FindFirstChild('Banks'):GetChildren()[1]
+
+local function clearbanklasers(obj)
+    if obj.ClassName == 'Model' and obj.Name == 'Lasers' then 
+        obj:Destroy()
+    end
+end
+
+for _,v in pairs (bk:GetDescendants()) do
+    clearbanklasers(v)
+end
+
+bk.DescendantAdded:Connect(clearbanklasers)
         local teleport = loadstring(game:HttpGet("https://raw.githubusercontent.com/Introvert1337/RobloxReleases/main/Scripts/Jailbreak/Teleporation.lua"))();
         teleport(CFrame.new(10.164444923400879, 18.561552047729492, 862.9168701171875));
                     game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(14.029051780700684, 18.56012535095215, 862.2860717773438))
@@ -17452,6 +18231,9 @@ local Time = 1 -- Time in seconds
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
 tween:Play()
 tween.Completed:Wait()
+wait(1)
+                    game:GetService("Players").LocalPlayer.Character:PivotTo(CFrame.new(30.36066246032715, 1.2894940376281738, 888.9481811523438))
+wait(10)
 local CFrameEnd = CFrame.new(94.8594970703125, -0.6586775183677673, 875.4664306640625) -- Place your coords in here
 local Time = 1 -- Time in seconds 
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
@@ -17494,7 +18276,7 @@ local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.C
 tween:Play()
 tween.Completed:Wait()
 end)
- RobByClickSection:NewButton("Rob Museum click the :", "How to use: exec vynixius then turn on rob assistance ", function() --mint deductions basement blue financing
+ RobByClickSection:NewButton("Rob Museum click the :", "Click it ", function() --mint deductions basement blue financing
          local notifications = loadstring(game:HttpGet(("https://raw.githubusercontent.com/AbstractPoo/Main/main/Notifications.lua"),true))()
 notifications:notify{
     Title = "Click to rob",
@@ -17709,6 +18491,74 @@ local RRRR = Window:NewTab("Misc")
   end
 end)
 end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
 
 
 
