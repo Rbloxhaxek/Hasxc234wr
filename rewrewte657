@@ -84332,6 +84332,7 @@ _G.KeyInput = "string"
 
 function MakeScriptHub()
 
+
 local UIS=game:GetService'UserInputService'
 getgenv().KeyBind="Minus"--Has to be letters
 
@@ -85873,11 +85874,11 @@ Tween.Completed:Wait()
 end)
    
 
-RobByClickSection:NewButton("Rob casino (30% chance of break) click the :", "How to use: Exec vynixius then turn everything on ", function()
+RobByClickSection:NewButton("Rob casino (15% Chance of breaking) click the :", "How to use: Exec vynixius then turn everything on ", function()
  local notifications = loadstring(game:HttpGet(("https://raw.githubusercontent.com/AbstractPoo/Main/main/Notifications.lua"),true))()
 notifications:notify{
     Title = "Click To Rob",
-    Description = "This is a very buggy script, Do you wish to continue? It can easily break and will require you to switch teams if it does break. if you click continue then click dont continue after to remove the notification",
+    Description = "This is a buggy script, Do you wish to continue? It can easily anticheat you  and will require you to rejoin the game if it does break. if you click continue then click dont continue after to remove the notification",
     Accept = {
     Text = "Continue",
         Callback = function()
@@ -87339,7 +87340,7 @@ local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.C
 tween:Play()
 tween.Completed:Wait()
 
-wait(40)
+wait(32)
 local CFrameEnd = CFrame.new(47.922210693359375, 63.90728759765625, 927.7545166015625) -- Place your coords in here
 local Time = 1 -- Time in seconds 
 local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
@@ -87950,6 +87951,25 @@ end)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 
