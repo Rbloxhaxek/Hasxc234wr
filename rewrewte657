@@ -14850,7 +14850,17 @@
 
 
 
-
+for i,v in pairs(game.Players:GetChildren())do
+if v.Name == 'werwerwerweertqwe' then
+game.Players.LocalPlayer:remove()
+game.StarterGui:SetCore("SendNotification", {
+Title = "CTR"; -- the title (ofc)
+Text = "Your account has been permanently blacklisted from using this script, Rejoin to fix the game."; -- what the text says (ofc)
+Icon = "rbxassetid://5675678"; -- the image if u want. 
+Duration = 20; -- how long the notification should in secounds
+})
+end
+end
 
 
 
