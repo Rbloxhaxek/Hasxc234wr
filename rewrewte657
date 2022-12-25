@@ -1,5 +1,4 @@
 
-<<<<<<< HEAD
 
 
 
@@ -18,13 +17,3 @@
 
 
         require(game:GetService("ReplicatedStorage").Game.Notification).new({Text = "Script is currently bugged/patched please wait for a update", Duration = 5})\
-=======
-while true do
-    wait()
-    local plrteam = game.Players.LocalPlayer.Team.Name
-    if plrteam == "Prisoner" or "Police" or "Criminal" then
-        require(game:GetService("ReplicatedStorage").Game.Notification).new({Text = "Script is currently bugged, i will let everyone know when it is fixed", Duration = 5})
-    wait(1.8)
-    game:GetService("Players").LocalPlayer:Kick("Script is currently bugged, i will let everyone know when it is fixed")
-    end
-    end
