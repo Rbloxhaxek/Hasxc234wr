@@ -1,1 +1,1 @@
-require(game:GetService("ReplicatedStorage").Game.Notification).new({Text = "Script is currently bugged/patched please wait for a update", Duration = 5})
+require(game:GetService("ReplicatedStorage").Game.Notification).new({Text = "Script is currently patched right now, please wait for a update", Duration = 15})
